@@ -10,9 +10,5 @@ let package = Package(
             name: "gt3-ios-cocoapods-support",
             targets: ["gt3-ios-cocoapods-support"]),
     ],
-    targets: [
-        .target(
-            name: "gt3-ios-cocoapods-support",
-            dependencies: [])
-    ]
+    swiftLanguageVersions: [.v5]
 )
