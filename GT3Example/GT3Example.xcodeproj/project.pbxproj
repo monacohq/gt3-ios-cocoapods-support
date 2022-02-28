@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C832CD72420A9AD002956C4 /* GT3Captcha.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C832CD52420A9AD002956C4 /* GT3Captcha.bundle */; };
-		1C832CD82420A9AD002956C4 /* GT3Captcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C832CD62420A9AD002956C4 /* GT3Captcha.framework */; };
+		3141D28D27CCE89B003526F5 /* GT3Captcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3141D28C27CCE89B003526F5 /* GT3Captcha.framework */; };
 		7A0FD5A51EB37E51000A4518 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FD5981EB37E51000A4518 /* CustomButton.m */; };
 		7A0FD5A61EB37E51000A4518 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FD59A1EB37E51000A4518 /* LoginViewController.m */; };
 		7A0FD5A71EB37E51000A4518 /* NSAttributedString+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FD59C1EB37E51000A4518 /* NSAttributedString+AttributedString.m */; };
@@ -29,22 +29,9 @@
 		BF14B6F21FA7216B00F2F8D3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = BF14B6F11FA7216B00F2F8D3 /* background.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7A9D640D1F06325B007B6C07 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		1C832CD52420A9AD002956C4 /* GT3Captcha.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GT3Captcha.bundle; sourceTree = "<group>"; };
-		1C832CD62420A9AD002956C4 /* GT3Captcha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GT3Captcha.framework; sourceTree = "<group>"; };
+		3141D28C27CCE89B003526F5 /* GT3Captcha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GT3Captcha.framework; path = "../Sources/gt3-ios-cocoapods-support/SDK/GT3Captcha.framework"; sourceTree = "<group>"; };
 		7A0FD5971EB37E51000A4518 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		7A0FD5981EB37E51000A4518 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		7A0FD5991EB37E51000A4518 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -84,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C832CD82420A9AD002956C4 /* GT3Captcha.framework in Frameworks */,
+				3141D28D27CCE89B003526F5 /* GT3Captcha.framework in Frameworks */,
 				7A958B1D1E8D5A850030EBC3 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,10 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				1C832CD52420A9AD002956C4 /* GT3Captcha.bundle */,
-				1C832CD62420A9AD002956C4 /* GT3Captcha.framework */,
 			);
 			name = SDK;
-			path = ../SDK;
+			path = "../Sources/gt3-ios-cocoapods-support/SDK";
 			sourceTree = "<group>";
 		};
 		7A4FC9631E814D600045C748 = {
@@ -168,6 +154,7 @@
 		7A958B1B1E8D5A850030EBC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3141D28C27CCE89B003526F5 /* GT3Captcha.framework */,
 				7A958B1C1E8D5A850030EBC3 /* WebKit.framework */,
 			);
 			name = Frameworks;
@@ -183,7 +170,6 @@
 				7A4FC9681E814D600045C748 /* Sources */,
 				7A4FC9691E814D600045C748 /* Frameworks */,
 				7A4FC96A1E814D600045C748 /* Resources */,
-				7A9D640D1F06325B007B6C07 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
