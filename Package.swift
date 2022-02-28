@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "gt3-ios-cocoapods-support",
+    name: "GT3Captcha",
     platforms: [.iOS(.v10)],
     products: [
         .library(
-            name: "gt3-ios-cocoapods-support",
-            targets: ["gt3-ios-cocoapods-support"]
+            name: "GT3Captcha",
+            targets: ["GT3Captcha"]
         ),
     ],
     targets: [
         .target(
-            name: "gt3-ios-cocoapods-support",
+            name: "GT3Captcha",
             dependencies: [],
             path: "Sources"
         ),
