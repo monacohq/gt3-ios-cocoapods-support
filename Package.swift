@@ -9,13 +9,13 @@ let package = Package(
     products: [
         .library(
             name: "GT3",
-            targets: ["GT3", "GT3Captcha"]
+            targets: ["GT3"]
         )
     ],
     targets: [
         .target(
             name: "GT3",
-            dependencies: [],
+            dependencies: ["GT3Captcha"],
             path: "Sources",
             resources: [.process("GT3Captcha.bundle")]
         ),

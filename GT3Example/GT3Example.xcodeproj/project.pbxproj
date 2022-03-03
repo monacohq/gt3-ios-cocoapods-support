@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C832CD72420A9AD002956C4 /* GT3Captcha.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C832CD52420A9AD002956C4 /* GT3Captcha.bundle */; };
 		3141D28D27CCE89B003526F5 /* GT3Captcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3141D28C27CCE89B003526F5 /* GT3Captcha.framework */; };
 		7A0FD5A51EB37E51000A4518 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FD5981EB37E51000A4518 /* CustomButton.m */; };
 		7A0FD5A61EB37E51000A4518 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FD59A1EB37E51000A4518 /* LoginViewController.m */; };
@@ -30,8 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C832CD52420A9AD002956C4 /* GT3Captcha.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GT3Captcha.bundle; sourceTree = "<group>"; };
 		3141D28C27CCE89B003526F5 /* GT3Captcha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GT3Captcha.framework; path = "../Sources/gt3-ios-cocoapods-support/SDK/GT3Captcha.framework"; sourceTree = "<group>"; };
+		31B9479D27D0E42C00333E72 /* gt3-ios-cocoapods-support */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "gt3-ios-cocoapods-support"; path = ..; sourceTree = "<group>"; };
 		7A0FD5971EB37E51000A4518 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		7A0FD5981EB37E51000A4518 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		7A0FD5991EB37E51000A4518 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -79,19 +78,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C832CD42420A9AD002956C4 /* SDK */ = {
+		31B9479C27D0E42C00333E72 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				1C832CD52420A9AD002956C4 /* GT3Captcha.bundle */,
+				31B9479D27D0E42C00333E72 /* gt3-ios-cocoapods-support */,
 			);
-			name = SDK;
-			path = "../Sources/gt3-ios-cocoapods-support/SDK";
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		7A4FC9631E814D600045C748 = {
 			isa = PBXGroup;
 			children = (
-				1C832CD42420A9AD002956C4 /* SDK */,
+				31B9479C27D0E42C00333E72 /* Packages */,
 				7A4FC96E1E814D600045C748 /* GT3Exmaple */,
 				7A4FC96D1E814D600045C748 /* Products */,
 				7A958B1B1E8D5A850030EBC3 /* Frameworks */,
@@ -221,7 +219,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4FC97F1E814D600045C748 /* LaunchScreen.storyboard in Resources */,
-				1C832CD72420A9AD002956C4 /* GT3Captcha.bundle in Resources */,
 				BF14B6F21FA7216B00F2F8D3 /* background.png in Resources */,
 				7A4FC97A1E814D600045C748 /* Main.storyboard in Resources */,
 				BF14B6F01FA71E6700F2F8D3 /* Asset.xcassets in Resources */,
