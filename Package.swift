@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "GT3",
-            targets: ["GT3"]
+            targets: ["GT3", "GT3Captcha"]
         )
     ],
     targets: [
@@ -17,7 +17,11 @@ let package = Package(
             name: "GT3",
             dependencies: [],
             path: "Sources",
-            resources: [.copy("GT3Captcha.framework"), .copy("GT3Captcha.bundle")]
+            resources: [.copy("GT3Captcha.bundle")]
+        ),
+        .binaryTarget(
+            name: "GT3Captcha",
+            path: "Sources/GT3Captcha.xcframework"
         )
     ],
     swiftLanguageVersions: [.v5]
