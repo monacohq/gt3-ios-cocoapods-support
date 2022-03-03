@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .target(
             name: "GT3",
-            dependencies: ["GT3Captcha"],
+            dependencies: [],
             path: "Sources",
             resources: [.process("GT3Captcha.bundle")]
         ),
