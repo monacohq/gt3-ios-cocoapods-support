@@ -15,19 +15,10 @@ let package = Package(
     targets: [
         .target(
             name: "GT3",
-            dependencies: ["GT3Captcha", "GT3Captcha_Bundle"],
-            path: "Sources"
-        ),
-        .target(
-            name: "GT3Captcha",
-            resources: [.process("GT3Captcha.framework")],
-            path: "Sources"
-        ),
-        .target(
-            name: "GT3Captcha_Bundle",
-            resources: [.process("GT3Captcha.bundle")],
-            path: "Sources"
-        ),
+            dependencies: [],
+            path: "Sources",
+            resources: [.copy("GT3Captcha.framework"), .copy("GT3Captcha.bundle")]
+        )
     ],
     swiftLanguageVersions: [.v5]
 )
