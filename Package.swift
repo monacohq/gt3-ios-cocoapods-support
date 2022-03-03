@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "GT3",
+    name: "GT3Captcha-iOS",
     platforms: [.iOS(.v10)],
     products: [
         .library(
-            name: "GT3",
-            targets: ["GT3"]
+            name: "GT3Captcha-iOS",
+            targets: ["GT3Captcha-iOS"]
         )
     ],
     targets: [
         .target(
-            name: "GT3",
+            name: "GT3Captcha-iOS",
             dependencies: ["GT3Captcha"],
             path: "Sources",
             resources: [.process("GT3Captcha.bundle")]

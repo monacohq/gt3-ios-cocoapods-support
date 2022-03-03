@@ -1,5 +1,5 @@
 import GT3Captcha
 
-struct GT3 {
+struct GT3Captcha_iOS {
     var text = "Hello, World!"
 }
