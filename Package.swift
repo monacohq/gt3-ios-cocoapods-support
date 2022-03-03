@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "GT3Captcha",
-            targets: ["GT3Captcha", "Captcha"]
+            targets: ["GT3Captcha"]
         )
     ],
     targets: [
@@ -17,7 +17,10 @@ let package = Package(
             name: "GT3Captcha",
             dependencies: ["Captcha"],
             path: "Sources",
-            resources: [.process("GT3Captcha.bundle")]
+            resources: [.process("GT3Captcha.bundle")],
+            linkerSettings: [
+              .linkedFramework("Captcha"),
+            ]
         ),
         .binaryTarget(
             name: "Captcha",
