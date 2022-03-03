@@ -4,26 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "GT3Captcha",
+    name: "GT3",
     platforms: [.iOS(.v10)],
     products: [
         .library(
-            name: "GT3Captcha",
-            targets: ["GT3Captcha"]
+            name: "GT3",
+            targets: ["GT3", "GT3Captcha"]
         )
     ],
     targets: [
         .target(
-            name: "GT3Captcha",
-            dependencies: ["Captcha"],
+            name: "GT3",
+            dependencies: ["GT3Captcha"],
             path: "Sources",
-            resources: [.process("GT3Captcha.bundle")],
-            linkerSettings: [
-              .linkedFramework("Captcha"),
-            ]
+            resources: [.process("GT3Captcha.bundle")]
         ),
         .binaryTarget(
-            name: "Captcha",
+            name: "GT3Captcha",
             path: "Sources/GT3Captcha.xcframework"
         )
     ],
